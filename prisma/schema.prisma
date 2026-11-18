@@ -22,7 +22,7 @@ enum OrderStatus {
 model Order {
   id String @id @default(uuid())
   totalAmount Float
-  totalItems Float
+  totalItems Int
   status OrderStatus
   paid Boolean @default(false)
   paidAt DateTime?
